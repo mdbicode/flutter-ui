@@ -74,26 +74,40 @@ class _MyHomePageState extends State<MyHomePage> {
                     offset: Offset.zero,
                   ),
                 ],
-              ), 
-            child: ElevatedButton(
-              onPressed: (){}, 
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0),
-                ),
-                shadowColor: Colors.grey[20],
-                elevation: 5.0,
               ),
-              child: Text(
-                "Add To Cart".toUpperCase(),
-                style: const TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white,
+            child: Row(
+              children: [
+                Column(
+                  children: [
+                    const Icon(
+                      Icons.favorite,
+                      color: Colors.red,
+                      size: 36,
+                    ),
+                    ElevatedButton(
+                      onPressed: (){}, 
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        shadowColor: Colors.grey[20],
+                        elevation: 5.0,
+                      ),
+                      child: Text(
+                        "Add To Cart".toUpperCase(),
+                        style: const TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white,
+                        ),
+                        
+                      )
+                      ),
+                  ],
                 ),
-              )
-              )
+              ],
+            )
             ),
           ],
         ),
