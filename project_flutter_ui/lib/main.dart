@@ -53,8 +53,12 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'NAMAKU ILMI',
-              style: Theme.of(context).textTheme.headlineMedium,
+              'Discover the most modern furniture',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.w500,
+                  letterSpacing: 1),
             ),
             Container(
               height: 300,
