@@ -77,6 +77,10 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             child: Row(
               children: [
+                const CircleAvatar(
+                radius: 50,
+                backgroundImage: NetworkImage('https://picsum.photos/200'),
+                )
                 SizedBox(
                   width: 180,
                   child: ClipRRect(
